@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFBOQ</title>
+    <link rel="shortcut icon" href="imagens/logo-caveira.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container">
+        <div class="imagem-logo">
+            <img src="imagens/logo-branco.png" alt="">
+        </div>
+        <nav class="nav">
+            <a href="#">
+                <li>Contatos</li>
+            </a>
+            <a href="#">
+                <li>Valores</li>
+            </a>
+            <a href="#">
+                <li>Entenda como funciona</li>
+            </a>
+        </nav>
+    </header>
+
+    <div class="imagem-de-fundo"> </div>
+        
+        <h1>Divirta-se, <br>
+            treinar é apenas um detalhe
+        </h1>
+       
+        <div class="aulas-experimentais"> Agende suas aulas experimentais</div>
+   
+
+    <main class="container2">
+        <section class="form">
+            <div class="inscreva-se">
+                <h2>Inscreva-se, agora, para 5 aulas gratuitas</h2>
+                <p>Comece sua jornada com a Crossfit Boqueirão</p>
+            </div>
+
+            <form action="post">
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="Nome"> Nome Completo</label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="apelido"> Como você quer ser chamado?</label>
+                        <input type="text" name="apelido" id="apelido">
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>   
+
+                    <div class="campo">
+                        <label for="cpf">CPF</label>
+                        <input type="number" name="cpf" id="cpf">
+
+                        <label for="whatsapp"> WhatsApp</label>
+                        <input type="tel" name="whatsapp" id="whatsapp" required>
+
+                        <p>Quem te indicou a CFBOQ? (colocar nome e sobrenome. <br> Caso ninguém tenha te indicado, deixe em branco)</p>
+                        <input type="text" name="indicaçao" id="indicacao">
+                    </div>
+
+                    <div class="campo">
+                        <label for="number"> CEP</label>
+                        <input type="number" name="cep" id="cep">
+                        
+                        <label for="text"> Endereço</label>
+                        <input type="text" name="endereco" id="endereco">
+                    </div>
+
+                    <button type="submit" class="botao"> Prosseguir </button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
