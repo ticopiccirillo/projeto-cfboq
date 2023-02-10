@@ -36,53 +36,116 @@
    
 
     <main class="container2">
-        <section class="form">
-            <div class="inscreva-se">
-                <h2>Inscreva-se, agora, para 5 aulas gratuitas</h2>
-                <p>Comece sua jornada com a Crossfit Boqueirão</p>
+
+        <div class="inscreva-se">
+            <h2>Inscreva-se, agora, para 5 aulas gratuitas</h2>
+            <p>Comece sua jornada com a <strong>Crossfit Boqueirão</strong></p>
+        </div>
+
+        <div id="sec-art">
+            <section class="form">
+                 <form action="post">
+                    <fieldset class="grupo">
+                        <div class="campo">
+                            <label for="Nome"> Nome Completo:</label>
+                            <input type="text" name="nome" id="nome" required>
+                        </div>
+                        <div class="campo">
+                            <label for="apelido"> Como você quer ser chamado?</label>
+                            <input type="text" name="apelido" id="apelido">
+                        </div>
+            
+                        <div class="campo">
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="campo">
+                            <label for="cpf">CPF:</label>
+                            <input type="number" name="cpf" id="cpf">
+                            <label for="whatsapp"> WhatsApp:</label>
+                            <input type="tel" name="whatsapp" id="whatsapp" required>
+                            <p>Quem te indicou a CFBOQ? (colocar nome e sobrenome. <br> Caso ninguém tenha te indicado, deixe em branco)</p>
+                            <input type="text" name="indicaçao" id="indicacao">
+                        </div>
+                        <div class="campo">
+                            <label for="text"> Endereço:</label>
+                            <input type="text" name="endereco" id="endereco">
+                        </div>
+            
+                            <div>
+                                <label for="number"> Cep:</label>
+                                <input type="number" name="cep" id="cep">
+                            </div>
+            
+                        <button type="submit" class="botao"> Prosseguir </button>
+                    </fieldset>
+                </form>
+            </section>
+            <article class="infornmaçoes">
+                <div class="info">
+                    <img src="imagens/relogio.png" alt="Relógio">
+                    <h3 class="info2">Horários</h3>
+                    <br>
+                    <p class="texto">Variedade de horários para encaixar na sua rotina 6h, 7h, 8h, 9h, 12h, 13h, 16h15, 17h15, 18h15, 19h15, 20h15, 21h15</p>
+                </div>
+
+                <div class="info">
+                    <img src="imagens/experiencia.png" alt="Melhor experiência">
+                    <h3 class="info2"> Tenha a melhor experiência</h3>
+                    <p class="texto">Nos horários de 8h00, 9h00, 13h00 e 21h15 há 3 vagas para alunos experimentais. Nos demais, há 2 vagas.</p>
+                </div>
+                
+                <div class="info">
+                    <img src="imagens/funciona2.png" alt="Como funciona">
+                    <h3 class="info2">Funciona assim</h3> <br>
+                        <p class="texto">As 5 aulas experimentais são consecutivas e iniciam toda a segunda-feira e terminam sexta-feira da mesma semana.</p>
+                </div>
+            </article>
+        </div>
+
+        <section class="valorestotal">
+            <div class="planocfboq">
+                <h1 class="planos" >Planos CFBOQ</h1>
             </div>
 
-            <form action="post">
-                <fieldset class="grupo">
-                    <div class="campo">
-                        <label for="Nome"> Nome Completo</label>
-                        <input type="text" name="nome" id="nome" required>
-                    </div>
-
-                    <div class="campo">
-                        <label for="apelido"> Como você quer ser chamado?</label>
-                        <input type="text" name="apelido" id="apelido">
-                    </div>
-                    
-                    <div class="campo">
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" required>
-                    </div>   
-
-                    <div class="campo">
-                        <label for="cpf">CPF</label>
-                        <input type="number" name="cpf" id="cpf">
-
-                        <label for="whatsapp"> WhatsApp</label>
-                        <input type="tel" name="whatsapp" id="whatsapp" required>
-
-                        <p>Quem te indicou a CFBOQ? (colocar nome e sobrenome. <br> Caso ninguém tenha te indicado, deixe em branco)</p>
-                        <input type="text" name="indicaçao" id="indicacao">
-                    </div>
-
-                    <div class="campo">
-                        <label for="number"> CEP</label>
-                        <input type="number" name="cep" id="cep">
-                        
-                        <label for="text"> Endereço</label>
-                        <input type="text" name="endereco" id="endereco">
-                    </div>
-
-                    <button type="submit" class="botao"> Prosseguir </button>
-                </fieldset>
-            </form>
+            <aside>
+                <div class="valores" id="valorunico">
+                    <h3 class="valordentro">Plano Único</h3>
+                    <p>Por Apenas R$ 314,00</p>
+                </div>
+                <div class="valores" id="valoravulso">
+                    <h3 class="valordentro">Aula Avulsa</h3>
+                    <p>Por Apenas R$ 50,00</p>
+                </div>
+            </aside>
         </section>
+
+        <article>
+            <div id="h1-video"><h1>Quer saber mais? <br> Fizemos alguns vídeos especiais para vocês.</h1></div>
+            <section class="container-video">
+                <div class="video">
+                    <h2 class="fonte-video">O que é CrossFit?  <br> O que é a CFBOQ?</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tSYGWmSl3Lo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="video">
+                    <h2 class="fonte-video">Como funcionam as aulas e condições de pagamento?</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YtWiYeNyl4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="video">
+                    <h2 class="fonte-video">Como funciona a semana de Aula Experimental?</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YtWiYeNyl4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+            </section>
+        </article>
+
+        
+        </section> 
     </main>
-    
+    <footer>
+        <p> Site Desenvolvido por <a href="https://www.instagram.com/ticopiccirillo/" target="_blank"><strong>Tico Piccirillo</strong></a> para a <a href="https://www.instagram.com/crossfitboqueirao/" target="_blank"><strong>@crossfit Boqueirão</strong></a>.</p>
+    </footer>
 </body>
 </html>
