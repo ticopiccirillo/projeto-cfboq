@@ -4,11 +4,15 @@
     --cor1:#F20587;
     --cor2:#000000;
     --cor3:#590232;
+    --cor4:#05F2DB;
+    --cor5:#D90479;
+    --cor6:#F2CB05;
+    --cor7:#0460D9;
 }
 
 * {
     margin: 0;
-    padding: ;
+    padding: 0;
     font-family: sans-serif;
     text-decoration: none;
     
@@ -16,6 +20,7 @@
 
 body {
     width: auto;
+   
 }
 
 .container {
@@ -24,7 +29,7 @@ body {
     justify-content: space-between;
     width: auto;
     height: 80px;
-    background-color:var(--cor2);
+    background-color:var(--cor4);
 }
 
 .imagem-logo {
@@ -65,13 +70,13 @@ li:hover {
     background-position: center center;
     width: auto;
     height: 450px;
-    background-color: var(--cor2);
+    background-color: var(--cor4);
 }
 
 h1 {
     text-align: center;
     text-transform: uppercase;
-    background-color: black;
+    background-color: var(--cor4);
     color: yellow;
     text-shadow: 2px 3px 2px #A6035D;
     line-height: 2em;
@@ -79,7 +84,7 @@ h1 {
 }
 
 #videos{
-    background-color: green;
+    background-color: var(--cor4);
     width: auto;
     height: auto;
     display: block;
@@ -95,11 +100,11 @@ h1 {
     align-items: center;
     justify-content: space-around;
     align-content: center;
-    background-color: #000000;
+    background-color: var(--cor4);
 }
 
 #h1-video {
-    background-color: black;
+    background-color: var(--cor4);
     padding: 30px;
 }
 
@@ -115,6 +120,7 @@ h1 {
 }
 
 .fonte-video {
+    background-color: var(--cor3);
     color: white;
     font-size: 20px;
     width: auto;
@@ -130,10 +136,11 @@ iframe {
 .container2 {
     display: block;
     width: auto;
-    background-color: var(--cor1);
+    background-color: var(--cor6);
 }
 
 #inscreva-se {
+    background-color: var(--cor6);
     display: block;
     width: auto;
     text-align: center;
@@ -143,6 +150,7 @@ iframe {
 }
 
 #inscreva-se > h2 {
+    background-color: var(--cor6);
     font-size: 2.5em;
     font-family: sans-serif;
     color: white;
@@ -151,12 +159,14 @@ iframe {
 }
 
 #inscreva-se > p {
+    background-color: var(--cor6);
     font-size: 2em;
     padding-top: 10px;
 } 
 
 
 #sec-art {
+    background-color: var(--cor6);
     display: block;
     align-content: center;
     justify-content: center;
@@ -170,7 +180,7 @@ iframe {
 #form {
     height: auto;
     width: 50%;
-    background-color: yellow;
+    background-color: var(--cor6);
     display: block;
     margin-right: 15px;
     margin-left: 20px;
@@ -181,9 +191,11 @@ iframe {
     border-radius: 15px;
     margin: auto;
     margin-bottom: 15px;
+    border: 2px solid var(--cor7);
 }
 
 form {
+    background-color: var(--cor6);
     display: inline-block;
     justify-content: center;
 }
@@ -191,7 +203,7 @@ form {
 #infornmaçoes {
     height: auto;
     width: 50%;
-    background-color: yellow;
+    background-color: var(--cor6);
     display: block;
     margin-right: 15px;
     margin-left: 20px;
@@ -202,9 +214,15 @@ form {
     border: none;
     margin: auto;
     margin-bottom: 10px;
+    border: 2px solid var(--cor7);
+}
+
+label {
+    font-weight: bold;
 }
 
 input {
+    background-color: var(--cor6);
     width: auto;
     height: 2px;
     border-radius: 4px;
@@ -212,18 +230,21 @@ input {
 }
 
 .campo {
+    background-color: var(--cor6);
     padding: 7px;
     display: inline-block;
     width: auto;
 }
 
 .campo > p {
+    background-color: var(--cor6);
     padding: 7px;
     font-weight: lighter;
     text-align: center;
 }
 
 #varios {
+    background-color: var(--cor6);
     display: block;
     width: auto;
     height: 20px;
@@ -252,6 +273,7 @@ input {
 }
 
 .info {
+    background-color: var(--cor6);
     display: flex;
     align-content: center;
     width: auto;
@@ -261,11 +283,13 @@ input {
 }
 
 .interna {
+    background-color: var(--cor6);
     display: inline;
 
 }
 
 .interna-2 {
+    background-color: var(--cor6);
     display: block;
     line-height: 0%;
     margin-bottom: 20px;
@@ -273,6 +297,7 @@ input {
 
 
 div > p.texto {
+    background-color: var(--cor6);
     display: block;
     margin: 20px;
     justify-content: center ;
@@ -282,6 +307,7 @@ div > p.texto {
 }
 
 div > img {
+    background-color: var(--cor6);
     width: 80px;
     height: 80px;
     margin-right: 20px;
@@ -290,8 +316,9 @@ div > img {
 
 
 .valorestotal {
-    background-color: green;
+    background-color: var(--cor5);
     height: auto;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
@@ -306,7 +333,7 @@ h1.planos {
     display: block;
     text-align: center;
     text-transform: uppercase;
-    background-color: green;
+    background-color: var(--cor5);
     color: blue;
     text-shadow: 2px 3px 2px black;
     line-height: 3em;
@@ -327,7 +354,7 @@ div.valores {
 }
 
 #valorunico {
-    background-color: rgb(255, 89, 0);
+    background-color: var(--cor4);
     display: block;
     padding: 20px;
     text-align: center;
@@ -341,7 +368,7 @@ h3.valordentro {
 }
 
 #valoravulso {
-    background-color: yellow;
+    background-color: var(--cor7);
     display: block;
     margin-left: 100px;
     padding: 20px;
@@ -357,7 +384,7 @@ div.texto-explicaçao {
 display: flex;
 flex-direction: column;
 padding: 40px;
-background-color: white;
+background-color: ;
 color: black;
 font-size: 1em;
 font-weight: 600;
@@ -367,12 +394,23 @@ box-sizing: border-box;
 
 
 footer {
-    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--cor2);
     height: 30px;
     color: white;
-    text-align: center;
     padding: 15px;
     font-size: 1em;
+}
+
+.footer {
+    width: 18vw;
+    margin: 0;
+}
+
+#footer{
+    display: block;
+    padding-bottom: 10px;
 }
 
 a {
@@ -382,5 +420,19 @@ a {
 
 a:hover {
     color: var(--cor1);
+}
+
+#contatos {
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.icones {
+    display: flex;
+    align-items: flex-start;
+    width: 15%;
+    
+   
 }
 
