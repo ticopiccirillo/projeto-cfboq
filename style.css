@@ -472,6 +472,31 @@ a:hover {
 
 @media (max-width:1020px) {
 
+    #burger {
+        display: block;
+        cursor: pointer;
+        transition: 1s;
+        font-size: 40px;
+        font-weight: bold;
+        color: var(--cor7);
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        justify-items: center;
+        width: auto;
+        height: auto;
+        top: 80px;
+        right: 15px;
+    }
+
+    .linkburger {
+        width: auto;
+        padding: 10px;
+        text-align: justify;
+    }
+
     .container-video {
         width: 100%;
         display: flex;
