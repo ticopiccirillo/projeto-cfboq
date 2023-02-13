@@ -15,10 +15,9 @@
     padding: 0;
     font-family: sans-serif;
     text-decoration: none;
-    
 }
 
-body {
+body, html {
     width: auto;
    
 }
@@ -81,12 +80,12 @@ li:hover {
 }
 
 .imagem-de-fundo {
-    background-image: url('imagens/caveira-rosa.png');
+    background-image: url(imagens/caveira-rosa.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     width: auto;
-    height: 450px;
+    height: 399px;
     background-color: var(--cor4);
 }
 
@@ -103,7 +102,7 @@ h1#principal {
    
 }
 
-hi#segundo {
+h1#segundo {
     text-align: center;
     width: auto;
     font-size: 1.5em;
@@ -129,6 +128,8 @@ hi#segundo {
     display: flex;
     width: auto;
     height: auto;
+    margin: auto;
+    margin-bottom: 25px;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -165,8 +166,6 @@ iframe {
     width: 30vw;
 }
 
-
-
 .container2 {
     display: block;
     width: auto;
@@ -197,7 +196,6 @@ iframe {
     font-size: 2em;
     padding-top: 10px;
 } 
-
 
 #sec-art {
     background-color: var(--cor6);
@@ -252,6 +250,7 @@ form {
     border: 4px solid var(--cor7);
     box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.501);
 }
+
 
 label {
     font-weight: bold;
@@ -309,24 +308,22 @@ input {
     border-color: var(--cor1);
 }
 
+
+
 .info {
     background-color: var(--cor6);
-    display: flex;
+    display: block;
+
     align-content: center;
+    text-align: center;
     width: auto;
     height: auto;
     margin-top: 5px;
-
 }
 
-.interna {
-    background-color: var(--cor6);
-    display: inline;
-}
-
-.interna2 {
+h3.info2 {
+    width: 100%;
     display: block;
-    width: auto;
 }
 
 
@@ -334,9 +331,9 @@ div > p.texto {
     background-color: var(--cor6);
     display: block;
     margin: 20px;
-    justify-content: center ;
+    justify-content: center;
     line-height: 20px;
-    font-size: .8em;
+    font-size: 1em;
     font-weight: 700;
 }
 
@@ -476,18 +473,18 @@ a:hover {
 @media (max-width:1020px) {
 
     .container-video {
-      width: 100%;
-      display: block;
-      flex-wrap: wrap;
-      align-items: center;
-
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
     }
 
     .video {
         display: block;
-        width: 60%;
+        width: 40%;
         align-items: center;
-        margin: auto;
+        
         margin-bottom: 20px;
     }  
 
@@ -520,21 +517,60 @@ a:hover {
     .nav {
         display: none;
         position: absolute;
-        width: 35%;
+        justify-items: center;
+        width: auto;
         height: auto;
         top: 80px;
-        right: 10px;
+        right: 15px;
     }
 
     .linkburger {
-        width: 60%;
-        padding: 15px;
-        text-align: center;
+        width: auto;
+        padding: 10px;
+        text-align: justify;
     }
+
+    .container-video {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
 
 }
 
 @media (max-width:718px) {
+
+    .nav {
+        display: none;
+        position: absolute;
+        justify-items: center;
+        width: auto;
+        height: auto;
+        top: 80px;
+        right: 15px;
+    }
+
+    .linkburger {
+        width: auto;
+        padding: 10px;
+        text-align: justify;
+    }
+        
+
+    h1#principal {
+        text-align: center;
+        width: auto;
+        font-size: 1.8em;
+        padding: 0px 20px 0px 20px;
+        text-transform: uppercase;
+        background-color: var(--cor4);
+        color: yellow;
+        text-shadow: 2px 3px 2px #a6035d;
+        line-height: 2em;
+    }
 
     #inscreva-se {
         background-color: var(--cor6);
@@ -547,15 +583,33 @@ a:hover {
         padding-bottom: 20px;
     }
 
+    #inscreva-se > h2 {
+        background-color: var(--cor6);
+        font-size: 2em;
+        font-family: sans-serif;
+        color: white;
+        text-shadow: 1px 2px 1px black;
+        padding-bottom: 10px;
+    }
+
+    #inscreva-se > p {
+        background-color: var(--cor6);
+        font-size: 1.5em;
+        padding-top: 10px;
+        width: auto;
+    }
+
     h1 {
         width: auto;
         text-align: center;
         text-transform: uppercase;
         background-color: var(--cor4);
         color: yellow;
-        text-shadow: 2px 3px 2px #A6035D;
-        line-height: 2em;
-    }
+        text-shadow: 2px 3px 2px #a6035d;
+        line-height: 33px;
+        font-size: 1.3em;
+        }
+    
 
     #sec-art {
         background-color: var(--cor6);
@@ -606,16 +660,114 @@ a:hover {
         box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.501);
     }
 
+    .interna {
+        background-color: var(--cor6);
+        display: block;
+        width: auto;
+        
+        text-align: center;
+    
+    }
+
     h3.info2 {
         width: 100%;
-        display: flex;
+        display: block;
     }
-   
+
+    .valorestotal {
+        background-color: var(--cor5);
+        width: auto;
+        height: auto;
+        padding-top: 5px;
+        padding-bottom: 32px;
+    }
+
+    div.planocfboq {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
+    h1.planos {
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: var(--cor5);
+        color: blue;
+        text-shadow: 2px 3px 2px black;
+        line-height: 3em;
+        font-size: 2em;
+    }
+
+    aside {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        height: auto;
+        width: 80%;
+    }
+
+    div#valorunico.valores {
+        background-color: var(--cor4);
+        display: block;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 1px 2px 2px rgb(0 0 0 / 50%);
+    }
+
+    div.valores {
+        background-color: var(--cor4);
+        display: block;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 1px 2px 2px rgb(0 0 0 / 50%);
+    }
+
+    h3.valordentro {
+        padding-top: 10px;
+        padding-bottom: 25px;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    #valoravulso {
+        background-color: var(--cor7);
+        display: block;
+        margin-left: 10px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 1px 2px 2px rgb(0 0 0 / 50%);
+    }
+
+footer {
+    width: auto;
+}
+
+    #footer {
+        width: auto;
+        font-size: .8em;
+    }
+
 }
 
 
-@media (max-width:405px) {
+@media (max-width:555px) {
 
+    .nav {
+        display: none;
+        position: absolute;
+        justify-items: center;
+        width: auto;
+        height: auto;
+        top: 80px;
+        right: 15px;
+    }
+
+    .linkburger {
+        width: auto;
+        padding: 10px;
+        text-align: justify;
+    }
     h1#principal {
         text-align: center;
         width: auto;
@@ -649,7 +801,7 @@ a:hover {
         align-items: center;
       }
 
-      .video {
+    .video {
         display: block;
         width: 90%;
         height: auto;
@@ -732,23 +884,88 @@ a:hover {
         box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.501);
     }
 
-    .interna-2 {
-        background-color: var(--cor6);
-        width: auto;
-        display: block;
-        line-height: 0%;
-        margin-bottom: 20px;
-    }
-
+   
     h3.info2 {
         width: 100%;
-        height: auto;
-        display: flex;
+        display: block;
     }
 
     p.texto {
         height: auto;
     }
 
+    .valorestotal {
+        background-color: var(--cor5);
+        width: auto;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    div.planocfboq {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
+    h1.planos {
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: var(--cor5);
+        color: blue;
+        text-shadow: 2px 3px 2px black;
+        line-height: 3em;
+        font-size: 2em;
+    }
+
+    aside {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: auto;
+        width: 80%;
+    }
+
+    div#valorunico.valores {
+        background-color: var(--cor4);
+        display: block;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 1px 2px 2px rgb(0 0 0 / 50%);
+    }
+
+    div.valores {
+        background-color: var(--cor4);
+        display: block;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 1px 2px 2px rgb(0 0 0 / 50%);
+    }
+
+    h3.valordentro {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    #valoravulso {
+        background-color: var(--cor7);
+        display: block;
+        margin-left: 10px;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 1px 2px 2px rgb(0 0 0 / 50%);
+    }
+
+    footer {
+        width: auto;
+    }
     
+        #footer {
+            width: auto;
+            font-size: .6em;
+        }
+
 }
