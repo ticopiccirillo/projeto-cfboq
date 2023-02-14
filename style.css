@@ -25,18 +25,20 @@ body, html {
 .container {
     display: flex;
     align-items: center;
+    justify-content: center;
     justify-content: space-between;
     width: auto;
-    height: 80px;
+    height: 100px;
     box-sizing: border-box;
     background-color:var(--cor4);
 }
 
 .imagem-logo {
-    height: 150%;
+    height: 100%;
     width: auto;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 30px;
+    margin-left: 80px;
+    border-radius: 50%;
 }
 
 .nav {
@@ -87,6 +89,7 @@ li:hover {
     width: auto;
     height: 399px;
     background-color: var(--cor4);
+    
 }
 
 h1#principal {
@@ -353,7 +356,9 @@ div > img {
     height: auto;
     padding-top: 20px;
     padding-bottom: 20px;
+    
 }
+
 
 div.planocfboq {
     display: block;
@@ -489,10 +494,9 @@ a:hover {
         justify-items: center;
         width: auto;
         height: auto;
-        top: 40px;
+        top: 52px;
         right: 15px;
     }
-
     .linkburger {
         width: auto;
         padding: 10px;
@@ -543,7 +547,7 @@ a:hover {
         justify-items: center;
         width: auto;
         height: auto;
-        top: 40px;
+        top: 52px;
         right: 15px;
     }
 
@@ -593,7 +597,7 @@ a:hover {
         justify-items: center;
         width: auto;
         height: auto;
-        top: 40px;
+        top: 52px;
         right: 15px;
     }
 
@@ -824,7 +828,7 @@ a:hover {
         justify-items: center;
         width: auto;
         height: auto;
-        top: 40px;
+        top: 65px;
         right: 15px;
     }
 
