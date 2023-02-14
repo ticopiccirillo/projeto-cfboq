@@ -146,14 +146,17 @@ h1#segundo {
     text-align: center;
     background-color: var(--cor3);
     color: white;
-    font-size: 20px;
-    width: auto;
-    padding: 18px;
+    font-size: 18px;
+    width: 81%;
+    padding: 19px;
+    /* margin-left: 17px; */
+    margin: auto;
 }
-
 .video {
     display: block;
+    background-color: var(--cor3);
     width: 40%;
+    height: auto;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -333,7 +336,7 @@ div > p.texto {
     justify-content: center;
     line-height: 20px;
     font-size: 1em;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 div > img {
@@ -486,7 +489,7 @@ a:hover {
         justify-items: center;
         width: auto;
         height: auto;
-        top: 80px;
+        top: 40px;
         right: 15px;
     }
 
@@ -495,13 +498,16 @@ a:hover {
         padding: 10px;
         text-align: justify;
     }
-
+    
     .container-video {
         width: 100%;
+        height: 0cap;
         display: flex;
-        flex-direction: row;
+        /*flex-direction: row;*/
         flex-wrap: wrap;
         align-items: center;
+        background-color: var(--cor4);
+        
     }
 
     .video {
@@ -516,12 +522,6 @@ a:hover {
         width: 90%;
         align-content: center;
         margin: auto;
-    }
-
-    .fonte-video {
-        display: block;
-        align-items: center;
-        justify-items: center;
     }
 
 }
@@ -543,7 +543,7 @@ a:hover {
         justify-items: center;
         width: auto;
         height: auto;
-        top: 80px;
+        top: 40px;
         right: 15px;
     }
 
@@ -593,7 +593,7 @@ a:hover {
         justify-items: center;
         width: auto;
         height: auto;
-        top: 80px;
+        top: 40px;
         right: 15px;
     }
 
@@ -638,13 +638,6 @@ a:hover {
         align-content: center;
         margin: auto;
     }
-
-    .fonte-video {
-        display: block;
-        align-items: center;
-        justify-items: center;
-    }
-
 
     #inscreva-se {
         background-color: var(--cor6);
@@ -738,9 +731,7 @@ a:hover {
         background-color: var(--cor6);
         display: block;
         width: auto;
-        
         text-align: center;
-    
     }
 
     h3.info2 {
@@ -813,7 +804,7 @@ a:hover {
         box-shadow: 1px 2px 2px rgb(0 0 0 / 50%);
     }
 
-footer {
+    footer {
     width: auto;
 }
 
@@ -833,7 +824,7 @@ footer {
         justify-items: center;
         width: auto;
         height: auto;
-        top: 80px;
+        top: 40px;
         right: 15px;
     }
 
@@ -891,11 +882,11 @@ footer {
         margin: auto;
     }
 
-    .fonte-video {
+   /* .fonte-video {
         display: block;
         align-items: center;
         justify-items: center;
-    }
+    }*/
 
     #inscreva-se {
         background-color: var(--cor6);
