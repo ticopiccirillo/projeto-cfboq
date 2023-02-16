@@ -82,7 +82,7 @@ li:hover {
 }
 
 .imagem-de-fundo {
-    background-image: url('imagens/Rafa-camisa-vermelha.jpg');
+    background-image: url('imagens/parede.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -175,7 +175,7 @@ iframe {
 }
 
 #imagem-fixa {
-    background-image: url('imagens/parede.jpg');
+    background-image: url('imagens/inclusivo.jpg');
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -728,11 +728,13 @@ a:hover {
     
     footer {
         width: auto;
+        
     }
 
     #footer {
         width: auto;
-        font-size: 1em;
+        font-size: .7em;
+        margin: auto;
         }
 }
 
@@ -749,7 +751,6 @@ a:hover {
     }
 
     div.valores {
-    
         border-radius: 10px
     }
 
@@ -765,6 +766,6 @@ a:hover {
     }
 
     footer {
-        font-size: .6em;
+        font-size: .7em;
     }
 }
