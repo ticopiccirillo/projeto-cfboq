@@ -1,9 +1,7 @@
 @charset "UTF-8";
 
 :root {
-    --cor1:#F20587;
     --cor2:#000000;
-    --cor3:#590232;
     --cor4:#05F2DB;
     --cor5:#D90479;
     --cor6:#F2CB05;
@@ -17,28 +15,28 @@
     text-decoration: none;
 }
 
-body, html {
-    width: auto;
-   
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px black;
 }
 
 .container {
+    max-width: 900px;
     display: flex;
+    margin: auto;
     align-items: center;
     justify-content: center;
     justify-content: space-between;
-    width: auto;
-    height: 100px;
+    height: 80px;
     box-sizing: border-box;
-    background-color:var(--cor4);
+    background-color: var(--cor2);
 }
 
 .imagem-logo {
     height: 100%;
     width: auto;
-    margin-top: 30px;
-    margin-left: 80px;
-    border-radius: 50%;
+    margin-left: 40px;
 }
 
 .nav {
@@ -46,12 +44,12 @@ body, html {
     justify-items: center;
     align-items: center;
     height: 70px;
-    width: auto;
+    max-width: 900px;
 }
 
 #burger {
-    background-color: var(--cor4);
-    color: black;
+    background-color: var(--cor2);
+    color: white;
     display: none;
     text-align: center;
     padding: 20px;
@@ -60,49 +58,53 @@ body, html {
 }
 
 #buger:hover {
-    background-color: var(--cor4);
+    background-color: var(--cor2);
     color: var(--cor7);
+    transform: .5s;
 }
 
 li {
-    list-style: none; 
-    margin: 0 40px 0 40px;
-    color: white;
-    background-color: var(--cor7);
+    width: auto;
+    list-style: none;
+    margin-right: 30px;
+    color: var(--cor6);
+    background-color: var(--cor5);
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px;
+    padding-right: 10px;
     font-weight: bold;
-    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.501);
 }
 
 li:hover {
-    color: var(--cor7);
-    background-color: var(--cor1);
+    color: var(--cor5);
+    background-color: var(--cor4);
     transition: .5s;
 }
 
 .imagem-de-fundo {
-    background-image: url(imagens/caveira-rosa.png);
+    background-image: url('imagens/Rafa-camisa-vermelha.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
+    background-attachment: fixed;
     width: auto;
-    height: 399px;
-    background-color: var(--cor4);
-    
+    height: 528px;
+    background-color: var(--cor2);
+ 
 }
 
 h1#principal {
     text-align: center;
     width: auto;
+    max-height: 500px;
     font-size: 2em;
+    padding-top: 20px;
     padding: 0px 20px 0px 0px;
     text-transform: uppercase;
-    background-color: var(--cor4);
+    background-color:black;
     color: yellow;
     text-shadow: 2px 3px 2px #A6035D;
     line-height: 2em;
-   
 }
 
 h1#segundo {
@@ -111,11 +113,10 @@ h1#segundo {
     font-size: 1.5em;
     padding: 0px 20px 0px 0px;
     text-transform: uppercase;
-    background-color: var(--cor4);
+    background-color: var(--cor2);
     color: yellow;
     text-shadow: 2px 3px 2px #A6035D;
     line-height: 2em;
-   
 }
 
 .container-video {
@@ -123,45 +124,46 @@ h1#segundo {
     width: auto;
     height: auto;
     margin: auto;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     align-content: center;
-    background-color: var(--cor4);
+    background-color: var(--cor2);
 }
 
 #videos{
-    background-color: var(--cor4);
+    background-color: var(--cor2);
     width: auto;
     height: auto;
     display: block;
     padding: 10px;
-
 }
 
 #h1-video {
-    background-color: var(--cor4);
+    background-color: var(--cor2);
     padding: 30px;
 }
 
 .fonte-video {
     text-align: center;
-    background-color: var(--cor3);
-    color: white;
+    background-color: var(--cor4);
+    color: var(--cor2);
     font-size: 18px;
-    width: 81%;
+    width: 85%;
     padding: 19px;
-    /* margin-left: 17px; */
     margin: auto;
+    border-radius: 10px;
 }
 .video {
     display: block;
-    background-color: var(--cor3);
+    background-color: var(--cor4);
     width: 40%;
     height: auto;
     align-items: center;
     margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-radius: 10px;
 }
 
 iframe {
@@ -169,16 +171,26 @@ iframe {
     display: flex;
     align-items: center;
     margin: auto;
+    border-radius: 10px;
 }
 
+#imagem-fixa {
+    background-image: url('imagens/parede.jpg');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-width: ; width: auto;
+    height: 400px;
+}
 .container2 {
     display: block;
     width: auto;
-    background-color: var(--cor6);
+    background-color: var(--cor2);
 }
 
 #inscreva-se {
-    background-color: var(--cor6);
+    background-color: var(--cor2);
     display: block;
     width: auto;
     text-align: center;
@@ -188,7 +200,7 @@ iframe {
 }
 
 #inscreva-se > h2 {
-    background-color: var(--cor6);
+    background-color: var(--cor2);
     font-size: 2.5em;
     font-family: sans-serif;
     color: white;
@@ -197,13 +209,14 @@ iframe {
 }
 
 #inscreva-se > p {
-    background-color: var(--cor6);
+    background-color: var(--cor2);
     font-size: 2em;
     padding-top: 10px;
+    color: var(--cor7);
 } 
 
 #sec-art {
-    background-color: var(--cor6);
+    background-color: var(--cor2);
     display: block;
     align-content: center;
     justify-content: center;
@@ -288,7 +301,6 @@ input {
     display: block;
     width: auto;
     height: 20px;
-    
 }
 
 .botao {
@@ -297,28 +309,23 @@ input {
     margin-top: 20px;
     padding: 10px;
     margin-bottom: 10px;
-    background-color: var(--cor1);
-    color: white;
+    background-color: var(--cor5);
+    color: var(--cor4);
     font-weight: bold;
     font-size: large;
     border-radius: 10px;
-    border-color: var(--cor1);
     cursor: pointer;
 }
 
 .botao:hover {
-    background-color: white;
-    color: var(--cor1);
+    background-color: var(--cor4);
+    color: var(--cor7);
     transition: 1S;
-    border-color: var(--cor1);
 }
-
-
 
 .info {
     background-color: var(--cor6);
     display: block;
-
     align-content: center;
     text-align: center;
     width: auto;
@@ -330,7 +337,6 @@ h3.info2 {
     width: 100%;
     display: block;
 }
-
 
 div > p.texto {
     background-color: var(--cor6);
@@ -349,40 +355,46 @@ div > img {
     margin-right: 20px;
 }
 
-
-
 .valorestotal {
-    background-color: var(--cor5);
-    height: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    
+    max-width: 900px;
+    background-color: var(--cor2);
 }
-
 
 div.planocfboq {
     display: block;
     width: auto;
     height: auto;
-
 }
 
 h1.planos {
     display: block;
     text-align: center;
     text-transform: uppercase;
-    background-color: var(--cor5);
-    color: blue;
-    text-shadow: 2px 3px 2px black;
+    background-color: var(--cor2);
+    color: var(--cor5);
+    text-shadow: 2px 1px 2px var(--cor4);
     line-height: 3em;
     font-size: 3em;
 }
 
+#imagem-fixa2 {
+    background-image: url('imagens/wall-ball.jpg');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-width: ; width: auto;
+    height: 300px;
+}
+
 aside {
     display: flex;
+    max-width: 900px;
     justify-content: center;
     align-content: center;
-    margin: auto;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 div.valores {
@@ -405,7 +417,6 @@ h3.valordentro {
     padding-bottom: 20px;
     font-size: 1.5em;
     font-weight: bold;
-    
 }
 
 #valoravulso {
@@ -421,19 +432,17 @@ h3.valordentro {
     display: flex;
 }
 
-
 div.texto-explicaçao {
-display: flex;
-flex-direction: column;
-padding: 40px;
-background-color: ;
-color: black;
-font-size: 1em;
-font-weight: 600;
-line-height: 40px;
-box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: ;
+    color: black;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 40px;
+    box-sizing: border-box;
 }
-
 
 footer {
     display: flex;
@@ -477,59 +486,6 @@ a:hover {
     width: 15%;
 }
 
-@media (max-width:1020px) {
-
-    #burger {
-        display: block;
-        cursor: pointer;
-        transition: 1s;
-        font-size: 40px;
-        font-weight: bold;
-        color: var(--cor7);
-    }
-
-    .nav {
-        display: none;
-        position: absolute;
-        justify-items: center;
-        width: auto;
-        height: auto;
-        top: 52px;
-        right: 15px;
-    }
-    .linkburger {
-        width: auto;
-        padding: 10px;
-        text-align: justify;
-    }
-    
-    .container-video {
-        width: 100%;
-        height: 0cap;
-        display: flex;
-        /*flex-direction: row;*/
-        flex-wrap: wrap;
-        align-items: center;
-        background-color: var(--cor4);
-        
-    }
-
-    .video {
-        display: block;
-        width: 40%;
-        align-items: center; 
-        margin-bottom: 20px;
-    }  
-
-    iframe {
-        display: flex;
-        width: 90%;
-        align-content: center;
-        margin: auto;
-    }
-
-}
-
 @media (max-width:890px) {
 
     #burger {
@@ -538,17 +494,16 @@ a:hover {
         transition: 1s;
         font-size: 40px;
         font-weight: bold;
-        color: var(--cor7);
+        color: white;
     }
 
     .nav {
         display: none;
         position: absolute;
-        justify-items: center;
         width: auto;
         height: auto;
-        top: 52px;
-        right: 15px;
+        top: 38px;
+        right: 23px;
     }
 
     .linkburger {
@@ -557,11 +512,18 @@ a:hover {
         text-align: justify;
     }
 
+    .imagem-de-fundo {
+        height: 330px;
+    }
+
     .container-video {
         width: 90%;
         display: block;
         flex-wrap: wrap;
         align-items: center;
+        background-color: var(--cor4);
+        padding-top: 20px;
+        padding-bottom: 20px;
       }
 
     .video {
@@ -571,7 +533,17 @@ a:hover {
         align-items: center;
         margin: auto;
         margin-bottom: 20px;
-    }  
+        background-color: var(--cor2);
+      }
+
+      .fonte-video {
+        display: block;
+        align-items: center;
+        justify-items: center;
+        width: 85%;
+        background-color: var(--cor2);
+        color: white;
+    }
 
     iframe {
         display: flex;
@@ -584,252 +556,24 @@ a:hover {
         display: block;
         align-items: center;
         justify-items: center;
-    }
-
-
-}
-
-@media (max-width:718px) {
-
-    .nav {
-        display: none;
-        position: absolute;
-        justify-items: center;
-        width: auto;
-        height: auto;
-        top: 52px;
-        right: 15px;
-    }
-
-    .linkburger {
-        width: auto;
-        padding: 10px;
-        text-align: justify;
-    }
-        
-
-    h1#principal {
-        text-align: center;
-        width: auto;
-        font-size: 1.8em;
-        padding: 0px 20px 0px 20px;
-        text-transform: uppercase;
-        background-color: var(--cor4);
-        color: yellow;
-        text-shadow: 2px 3px 2px #a6035d;
-        line-height: 2em;
-    }
-
-    .container-video {
-        width: 90%;
-        display: block;
-        flex-wrap: wrap;
-        align-items: center;
-      }
-
-    .video {
-        display: block;
-        width: 90%;
-        height: auto;
-        align-items: center;
-        margin: auto;
-        margin-bottom: 20px;
-    }  
-
-    iframe {
-        display: flex;
-        width: 90%;
-        align-content: center;
-        margin: auto;
+        width: 85%;
     }
 
     #inscreva-se {
-        background-color: var(--cor6);
-        display: block;
-        width: 71%;
-        margin: auto;
-        text-align: center;
-        line-height: 2em;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-right: 30px;
+        padding-left: 30px;
     }
-
-    #inscreva-se > h2 {
-        background-color: var(--cor6);
-        font-size: 2em;
-        font-family: sans-serif;
-        color: white;
-        text-shadow: 1px 2px 1px black;
-        padding-bottom: 10px;
-    }
-
-    #inscreva-se > p {
-        background-color: var(--cor6);
-        font-size: 1.5em;
-        padding-top: 10px;
-        width: auto;
-    }
-
-    h1 {
-        width: auto;
-        text-align: center;
-        text-transform: uppercase;
-        background-color: var(--cor4);
-        color: yellow;
-        text-shadow: 2px 3px 2px #a6035d;
-        line-height: 33px;
-        font-size: 1.3em;
-        }
-    
-
-    #sec-art {
-        background-color: var(--cor6);
-        width: auto;
-        display: block;
-        align-content: center;
-        justify-content: center;
-        flex-direction: row;
-        margin: auto;
-        width: 100%;
-        height: auto;
-        padding-bottom: 20px;
-    }
-
-    #form {
-        height: auto;
-        width: 80%;
-        background-color: var(--cor6);
-        display: block;
-        margin-right: 15px;
-        margin-left: 20px;
-        margin-bottom: 10px;
-        padding-top: 20px;
-        padding-bottom: 6px;
-        padding-left: 15px;
-        border-radius: 15px;
-        margin: auto;
-        margin-bottom: 15px;
-        border: 4px solid var(--cor7);
-        box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.501);
-    }
-
-    #infornmaçoes {
-        height: auto;
-        width: 80%;
-        background-color: var(--cor6);
-        display:block;
-        margin-right: 15px;
-        margin-left: 20px;
-        padding-top: 20px;
-        padding-bottom: 11px;
-        padding-left: 10px;
-        border-radius: 15px;
-        border: none;
-        margin: auto;
-        margin-bottom: 10px;
-        border: 4px solid var(--cor7);
-        box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.501);
-    }
-
-    .interna {
-        background-color: var(--cor6);
-        display: block;
-        width: auto;
-        text-align: center;
-    }
-
-    h3.info2 {
-        width: 100%;
-        display: block;
-    }
-
-    .valorestotal {
-        background-color: var(--cor5);
-        width: auto;
-        height: auto;
-        padding-top: 5px;
-        padding-bottom: 32px;
-    }
-
-    div.planocfboq {
-        display: block;
-        width: auto;
-        height: auto;
-    }
-
-    h1.planos {
-        display: block;
-        text-align: center;
-        text-transform: uppercase;
-        background-color: var(--cor5);
-        color: blue;
-        text-shadow: 2px 3px 2px black;
-        line-height: 3em;
-        font-size: 2em;
-    }
-
-    aside {
-        display: flex;
-        justify-content: space-evenly;
-        align-content: center;
-        height: auto;
-        width: 80%;
-    }
-
-    div#valorunico.valores {
-        background-color: var(--cor4);
-        display: block;
-        padding: 20px;
-        text-align: center;
-        box-shadow: 1px 2px 2px rgb(0 0 0 / 50%);
-    }
-
-    div.valores {
-        background-color: var(--cor4);
-        display: block;
-        padding: 20px;
-        text-align: center;
-        box-shadow: 1px 2px 2px rgb(0 0 0 / 50%);
-    }
-
-    h3.valordentro {
-        padding-top: 10px;
-        padding-bottom: 25px;
-        font-size: 1.5em;
-        font-weight: bold;
-    }
-
-    #valoravulso {
-        background-color: var(--cor7);
-        display: block;
-        margin-left: 10px;
-        padding: 20px;
-        text-align: center;
-        box-shadow: 1px 2px 2px rgb(0 0 0 / 50%);
-    }
-
-    footer {
-    width: auto;
 }
-
-    #footer {
-        width: auto;
-        font-size: .8em;
-    }
-
-}
-
 
 @media (max-width:555px) {
 
     .nav {
         display: none;
         position: absolute;
-        justify-items: center;
         width: auto;
         height: auto;
-        top: 65px;
-        right: 15px;
+        top: 38px;
+        right: 23px;
     }
 
     .linkburger {
@@ -837,30 +581,33 @@ a:hover {
         padding: 10px;
         text-align: justify;
     }
+
+    .imagem-de-fundo {
+        height: 330px;
+    }
+
     h1#principal {
         text-align: center;
         width: auto;
         font-size: 1.5em;
         padding: 0px 20px 0px 0px;
         text-transform: uppercase;
-        background-color: var(--cor4);
+        background-color: var(--cor2);
         color: yellow;
         text-shadow: 2px 3px 2px #A6035D;
         line-height: 2em;
-       
     }
     
-    hi#segundo {
+    h1#segundo {
         text-align: center;
         width: auto;
         font-size: 1em;
         padding: 0px 20px 0px 0px;
         text-transform: uppercase;
-        background-color: var(--cor4);
+        background-color: var(--cor2);
         color: yellow;
         text-shadow: 2px 3px 2px #A6035D;
         line-height: 2em;
-       
     }
 
     .container-video {
@@ -868,6 +615,7 @@ a:hover {
         display: block;
         flex-wrap: wrap;
         align-items: center;
+        border-radius: 10PX;
       }
 
     .video {
@@ -879,6 +627,13 @@ a:hover {
         margin-bottom: 20px;
     }  
 
+    .fonte-video {
+        display: block;
+        align-items: center;
+        justify-items: center;
+        width: 90%;
+    }
+
     iframe {
         display: flex;
         width: 90%;
@@ -886,85 +641,32 @@ a:hover {
         margin: auto;
     }
 
-   /* .fonte-video {
-        display: block;
-        align-items: center;
-        justify-items: center;
-    }*/
-
     #inscreva-se {
-        background-color: var(--cor6);
+        background-color: var(--cor2);
         display: block;
         width: 80%;
         margin: auto;
-        font-size: .7em;
+        font-size: 1em;
         text-align: center;
-        line-height: 2em;
+        line-height: 2.5em;
         padding-top: 20px;
         padding-bottom: 20px;
     }
 
     #sec-art {
-        background-color: var(--cor6);
+        background-color: var(--cor2);
         width: auto;
         display: block;
         align-content: center;
         justify-content: center;
-        flex-direction: row;
         margin: auto;
         width: 100%;
         height: auto;
         padding-bottom: 20px;
     }
 
-    #form {
-        height: auto;
-        width: 80%;
-        background-color: var(--cor6);
-        display: block;
-        margin-right: 15px;
-        margin-left: 20px;
-        margin-bottom: 10px;
-        padding-top: 20px;
-        padding-bottom: 6px;
-        padding-left: 15px;
-        border-radius: 15px;
-        margin: auto;
-        margin-bottom: 15px;
-        border: 4px solid var(--cor7);
-        box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.501);
-    }
-
-    #infornmaçoes {
-        height: auto;
-        width: 80%;
-        background-color: var(--cor6);
-        display:block;
-        margin-right: 15px;
-        margin-left: 20px;
-        padding-top: 20px;
-        padding-bottom: 11px;
-        padding-left: 10px;
-        border-radius: 15px;
-        border: none;
-        margin: auto;
-        margin-bottom: 10px;
-        border: 4px solid var(--cor7);
-        box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.501);
-    }
-
-   
-    h3.info2 {
-        width: 100%;
-        display: block;
-    }
-
-    p.texto {
-        height: auto;
-    }
-
     .valorestotal {
-        background-color: var(--cor5);
+        background-color: var(--cor2);
         width: auto;
         height: auto;
         padding-top: 20px;
@@ -981,60 +683,88 @@ a:hover {
         display: block;
         text-align: center;
         text-transform: uppercase;
-        background-color: var(--cor5);
-        color: blue;
-        text-shadow: 2px 3px 2px black;
+        background-color: var(--cor2);
+        color: var(--cor5);
+        text-shadow: 2px 1px 2px var(--cor4);
         line-height: 3em;
-        font-size: 2em;
+        font-size: 2.2em;
     }
 
     aside {
         display: flex;
+        max-width: 900px;
         justify-content: center;
         align-content: center;
-        height: auto;
-        width: 80%;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
-
-    div#valorunico.valores {
-        background-color: var(--cor4);
-        display: block;
-        padding: 10px;
-        text-align: center;
-        box-shadow: 1px 2px 2px rgb(0 0 0 / 50%);
-    }
-
+    
     div.valores {
+        width: 200px;
+        height: 100px;
+        border-radius: 10px
+    }
+    
+    #valorunico {
         background-color: var(--cor4);
         display: block;
         padding: 20px;
         text-align: center;
-        box-shadow: 1px 2px 2px rgb(0 0 0 / 50%);
     }
-
+    
     h3.valordentro {
         padding-top: 10px;
         padding-bottom: 10px;
-        font-size: 1em;
+        font-size: 1.5em;
         font-weight: bold;
     }
-
+    
     #valoravulso {
         background-color: var(--cor7);
         display: block;
-        margin-left: 10px;
-        padding: 10px;
         text-align: center;
-        box-shadow: 1px 2px 2px rgb(0 0 0 / 50%);
     }
-
+    
     footer {
         width: auto;
     }
-    
-        #footer {
-            width: auto;
-            font-size: .6em;
-        }
 
+    #footer {
+        width: auto;
+        font-size: 1em;
+        }
+}
+
+@media (max-width:380px) {
+
+    .fonte-video {
+        width: 80%;
+    }
+
+    aside {
+        display: flex;
+        max-width: 900px;
+        align-content: center;
+    }
+
+    div.valores {
+    
+        border-radius: 10px
+    }
+
+    h3.valordentro {
+        width: auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 1em;
+        font-weight: bold;
+    }
+    div.valores p {
+        font-size: 1em;
+    }
+
+    footer {
+        font-size: .6em;
+    }
 }
