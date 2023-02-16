@@ -1,2 +1,2 @@
 # projeto-cfboq
- página da dcfboq, aulas experimentais
+Uma releitura da página principal.
